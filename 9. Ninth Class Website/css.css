@@ -1,0 +1,60 @@
+@keyframes wowbg {
+    0% {
+        background: navajowhite;
+    }
+
+    25% {
+        background: yellowgreen;
+    }
+
+    50% {
+        background: mediumslateblue;
+    }
+
+    75% {
+        background: turquoise;
+    }
+
+    100% {
+        background: midnightblue;
+    }
+}
+
+@keyframes wowtext {
+    0% {
+        color: midnightblue;
+    }
+
+    25% {
+        color: turquoise;
+    }
+
+    50% {
+        color: mediumslateblue;
+    }
+
+    75% {
+        color: yellowgreen;
+    }
+
+    100% {
+        color: navajowhite;
+    }
+}
+
+div {
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    animation-name: wowbg;
+    animation-duration: 8s;
+    animation-iteration-count: infinite; 
+}
+
+h1 {
+    animation-name: wowtext;
+    animation-direction: revert;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    text-align: center
+}
