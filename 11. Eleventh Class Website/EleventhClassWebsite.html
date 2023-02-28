@@ -1,0 +1,79 @@
+<html>
+
+<head>
+
+    <title>
+
+        My Eleventh Website
+
+    </title>
+
+</head>
+
+<body>
+
+    <h1>
+        <script>
+
+            var a = window.prompt("Enter your number to check if its odd or even.");
+
+            if (a % 2 == 0) {
+                document.write("The number " + a + " is even.")
+            }
+            else {
+                document.write("The number " + a + " is odd.")
+            }
+
+        </script>
+
+        <br />
+        <br />
+
+        <script>
+
+            var a = window.prompt("Write your number to check if its prime or not.");
+            var b = 0;
+
+            for (var i = 1; i < (a / 2); i++) {
+                if (a % i == 0) {
+                    b++;
+                }
+            }
+
+            if (b < 2) {
+                document.write("Your Number " + a + " is a prime number.");
+            }
+            else {
+                document.write("Your Number " + a + " is not a prime number.");
+            }
+
+        </script>
+
+        <br />
+        <br />
+
+        <script>
+
+            var a = 0;
+            var b = 1;
+            var c;
+            var length = window.prompt("Enter a number to generate the fibonacci series");
+
+            document.write("Fibonacci Series");
+            
+            document.write("<br> <br>" + a + "<br>");
+
+            for (var i = 0; i < length; i++) {
+                document.write(b + "<br>");
+                c = a + b;
+                a = b;
+                b = c;
+            }
+
+        </script>
+
+    </h1>
+
+</body>
+
+</html>
