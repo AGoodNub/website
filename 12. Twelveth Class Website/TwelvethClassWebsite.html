@@ -1,0 +1,86 @@
+<html>
+
+<head>
+
+    <title>
+
+        My Twelveth Website
+
+    </title>
+
+</head>
+
+<body>
+
+    <a href="https://agoodnub.github.io/website/" target="_self">
+        <font size="7">Index</font>
+    </a>
+
+    <h1>
+        
+        <script>
+
+            var credit, cost=100;
+
+            credit = window.prompt("Enter the number of credit: ");
+            window.alert("The cost of one credit is 100$.");
+
+            document.write("The total cost of your semester's credit is: " + (credit * cost) + "$ <br>");
+
+        </script>
+
+        <script>
+
+            var item, price, quantity, total = 0;
+            item = window.prompt("Enter the number of items: ");
+            
+
+            for (var i = 0; i < item; i++) {
+
+                price = window.prompt("Enter the price " + (i + 1) + ":");
+                quantity = window.prompt("Enter the quantity " + (i + 1) + ":");
+                total += price * quantity;
+
+            }
+
+            document.write("The total is: " + total + "$ <br>");
+
+        </script>
+
+        <script>
+
+            var students = 0, grade = 0, temp = 0;
+            var average = grade / students;
+            students = window.prompt("Enter the number of students: ");
+
+            for (var i = 0; i < students; i++) {
+
+                temp = window.prompt((i + 1) + ". Enter the grade of students: ");
+
+                grade += 1 * temp;
+            }
+
+            document.write("The average graded of the class is: " + average + " <br>");
+        </script>
+
+        <script>
+
+            var room, revenue = 0, cost;
+            room = window.prompt("Enter the number of rooms rented: ");
+
+            for (var i = 0; i < room; i++) {
+
+                cost = window.prompt("Enter the cost of the room: ");
+
+                revenue += 1 * cost;
+            }
+
+            document.write("The total revenue is: " + revenue + "$");
+
+        </script>
+
+    </h1>
+
+</body>
+
+</html>
