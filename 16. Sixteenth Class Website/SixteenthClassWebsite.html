@@ -1,0 +1,48 @@
+<html>
+
+<head>
+
+    <title>
+
+        My Sixteenth Website
+
+    </title>
+
+    <script>
+
+        function validateemail() {
+
+            var x = document.myform.email.value;
+            var atposoition = x.indexOf("@");
+            var dotposition = x.lastIndexOf(".");
+
+            if (atposoition < 1 || dotposition < atposoition + 3 || dotposition + 2 >= x.length) {
+                alert("Please enter a valid email address \n atposition: " + atposoition + "\n dotposition: " + dotposition);
+                return false;
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <a href="https://agoodnub.github.io/website/" target="_self">
+        <font size="7">Index</font>
+    </a>
+
+
+
+    <form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp"  onsubmit="return validateemail();">
+
+        Email: <input type="text" name="email"/>
+
+               <input type="submit" value="register" />
+
+    </form>
+
+</body>
+
+</html>
